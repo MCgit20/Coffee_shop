@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100..900,700;1,100;1..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --accent: #d7790b;
+  --black: #1a1a1a;
+  --gray: #f3f3f3;
+}
+
+html {
+  scroll-padding-top: 25vh;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+section {
+  min-width: 100%;
+  min-height: 100vh;
+  color: var(--black);
+}
+
+/* Navbar */
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 1px solid var(--black);
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  filter: drop-shadow(5px 5px 10px transparent);
+}
+
+/* Navbar Sticky */
+
+nav.sticky {
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.548);
+  filter: drop-shadow(5px 5px 10px #00000022);
+}
+
+/* Navbar Brand */
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.brand {
+  transition: all 0.3s ease-in-out;
+}
+
+.brand:hover {
+  opacity: 0.8;
+}
+
+/* Navbar Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu a,
+.menu-navbar a {
+  display: inline-block;
+  position: relative;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu a::after, 
+.menu-navbar a::after {
+  color: var(--accent);
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.17em;
+  bottom: 0;
+  left: 0;
+  background: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu a:hover::after, 
+.menu-navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-link {
+  display: none;
+}
+
+.btn-2 {
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+  background-color: var(--black);
+  color: white;
+  border-radius: 12px;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.btn-2:hover {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+
