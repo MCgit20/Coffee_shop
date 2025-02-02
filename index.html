@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
     <!-- link swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>MC Keopi</title>
 </head>
 <body>
@@ -66,7 +66,7 @@
                             <h2>SALE EVENT</h2>
                             <p>
                                 Discover exceptional coffee experiences with MC Keopi today
-                                with 10% off!
+                                with 20% off!
                             </p>
                             <button 
                                 class="btn-2 btn-banner-1"
@@ -122,7 +122,70 @@
             </div>
             
             <!-- Paginations -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
+    </section>
+
+    <!-- Category Section -->
+    <div class="category">
+        <a href="menu.html#hd">
+            <div class="category-item hot-drinks">
+                <h4>Hot Drinks</h4>
+            </div>
+        </a>
+        <a href="menu.html#cd">
+            <div class="category-item cold-drinks">
+                <h4>Cold Drinks</h4>
+            </div>
+        </a>
+        <a href="menu.html#fd">
+            <div class="category-item foods">
+                <h4>Foods</h4>
+            </div>
+        </a>
+        <a href="menu.html#md">
+            <div class="category-item merchandise">
+                <h4>Merchandise</h4>
+            </div>
+        </a>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>About <b>MC Keopi</b></h1>
+        <div class="about-container">
+            <div class="about-headline">
+                <p>
+                    At <b>MC Keopi</b>, we're passionate about more than just coffee;
+                    we're obsessed with crafting moments of pure joy and connection
+                    through every cup.
+                </p>
+                <p>
+                    <b>MC Keopi</b> is more than just a purveyor of exceptional coffee;
+                    it's a destination where friendships flourish, ideas percolate, and
+                    memeries are made.
+                </p>
+                <button 
+                    class="btn-2 btn-about"
+                    onclick="window.location.href='contact.html'"
+                >
+                    Contact Us
+                </button>
+            </div>
+
+            <div class="about-img">
+                <img src="img/about-1.png" alt="about">
+                <img src="img/about-2.png" alt="about">
+                <img src="img/about-3.png" alt="about">
+            </div>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Testimonials Section -->
     </section>
 </body>
 </html>

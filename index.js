@@ -15,4 +15,29 @@ document
   .querySelectorAll(".menu a")
   .forEach((item) => item.addEventListener("click", toggleMenu));
 
+// Swiper
+const swiper = new Swiper(".swiper", {
+  //Parameters
+  slidesPerView: 1,
+  direction: "horizontal",
+  lazyLoading: true,
+  centeredSlides: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
 
+  autoplay: {
+    delay: 3000,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation Arrows
+  navigation : {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
