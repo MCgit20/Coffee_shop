@@ -153,7 +153,7 @@ nav.sticky {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   padding: 100px;
-  color: white;
+  color: black;
   position: relative;
 }
 
@@ -353,7 +353,7 @@ nav.sticky {
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
 }
 
