@@ -389,3 +389,255 @@ nav.sticky {
   opacity: 0.1;
   margin-top: 100px;
 }
+
+/* Testimony Section */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.testimonials h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.testimony-container {
+  display: flex;
+  gap: 24px;
+}
+
+.testimony {
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+  justify-content: space-between;
+  padding: 60px 45px 16px 45px;
+  width: 431px;
+  height: 255px;
+}
+
+.testimony p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.testimony p b {
+  color: var(--accent);
+}
+
+/* Callout Section */
+.callout {
+  background: url("img/callout-img.png") no-repeat center/cover;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+}
+
+.callout div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.callout div h4,
+.callout div i {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.callout h1 {
+  font-size: 48px;
+}
+
+.btn-callout {
+  width: 281px;
+  height: 63px;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn-callout:hover {
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+footer h1:hover {
+  color: var(--accent);
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-box i {
+  font-size: 30px;
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+.social-box:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.social-box:hover i {
+  color: white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Menu Page */
+.menu-navbar {
+  z-index: 998;
+  position: fixed;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 25px 155px;
+  background-color: #f6f6f6;
+  gap: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.menu-navbar a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.menu-navbar a::after {
+  height: 0.1em;
+}
+
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 230px;
+}
+
+.menu-category {
+  margin-bottom: 100px;
+}
+
+.menu-category h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.menu-category .divider {
+  margin-top: 30px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-item h4 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* Product Page */
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 175px;
+  min-height: 100%;
+}
+
+.product-banner {
+  background-color: var(--accent);
+  padding: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 15%;
+}
+
+.product-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-banner h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.product-banner p {
+  font-weight: 400;
+  font-size: 24px;
+  width: 496px;
+}
+
+.product-banner h6 {
+  padding: 5px 32px;
+  background-color: white;
+  width: fit-content;
+  border-radius: 32x;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.product-info {
+  display: flex;
+  margin-top: 48px;
+  justify-content: center;
+  gap: 5%;
+}
+
