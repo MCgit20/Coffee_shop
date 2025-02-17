@@ -41,3 +41,16 @@ const swiper = new Swiper(".swiper", {
     prevEl: '.swiper-button-prev',
   },
 })
+
+
+/* Audio */
+
+if (!document.getElementById('background-audio')) {
+  const audio = document.createElement('audio');
+  audio.id = 'background-audio';
+  audio.src = "Coffee.mp3";
+  audio.autoplay = true;
+  audio.loop = true;
+  audio.hidden = true; 
+  document.body.appendChild(audio);
+}
